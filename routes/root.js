@@ -1,4 +1,4 @@
-// First of all you should start redis server in window command prompmt
+// First of all you should start redis server in window command prompt
 // After that write there           ->> redis-server
 // If you use cli for redis command ->> redis-cli
 
