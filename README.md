@@ -6,6 +6,10 @@
   - First of all you should start redis server in window command prompt
   - For that write there ->> redis-server
   - If you use cli for checking redis command  ->>  redis-cli
+  - After that "git clone https://github.com/mmhk30313/Redis-Express.git"
+  - cd Redis-Express
+  - yarn or npm install
+  - yarn start or npm start
 
 ### Api Endpoints:
   - root path: http://localhost:4000
