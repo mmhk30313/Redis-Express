@@ -7,7 +7,7 @@
   - If you use cli for checking redis command  ->>  redis-cli
 
 ### Api Endpoints:
-  - /post/:{key}/{:value}
+  - /post/:key/:value
     * This particular endpoint should now store the key-value pair data inside Redis.
-  - /get/:{key}
+  - /get/:key
     * This particular endpoint should return the stored value inside Redis if any relevant key is found.
