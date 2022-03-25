@@ -2,7 +2,7 @@
 // After that write there           ->> redis-server
 // If you use cli for redis command ->> redis-cli
 
-const redisClient = require('../modules/redisClient');
+// const redisClient = require('../modules/redisClient');
 const express = require("express");
 const router = express.Router();
 
@@ -69,6 +69,8 @@ router.get("/", (_, res) => {
 
 // /post/:key/:value -> Store key -> value in redis
 router.post('/post/:key/:value', async(req, res) => {
+  const redisClient = require('../modules/redisClient');
+
   const {key, value} = req.params;
   if(!key || !value){
     res.status(400).json({
@@ -137,6 +139,8 @@ router.post('/post/:key/:value', async(req, res) => {
 
 // /get/:key -> To get value by key from redis
 router.get('/get/:key', async(req, res) => {
+  const redisClient = require('../modules/redisClient');
+
   const {key} = req.params;
   if(!key){
     res.status(400).json({

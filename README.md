@@ -8,7 +8,7 @@
   - If you use cli for checking redis command  ->>  redis-cli
 
 ### Api Endpoints:
-
+  - root path: http://localhost:4000
   - /post/:key/:value
     * This particular endpoint should now store the key-value pair data inside Redis.
   - /get/:key
